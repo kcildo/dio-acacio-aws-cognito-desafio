@@ -1,0 +1,195 @@
+{
+	"info": {
+		"_postman_id": "3526f54d-b32a-4f08-910a-e9c061a25c2d",
+		"name": "aws-acacio-project",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "21392810"
+	},
+	"item": [
+		{
+			"name": "insertPaper",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Opaline 180\",\r\n    \"price\": 2.50,\r\n    \"statusPaper\": true\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://p92ss7f4a6.execute-api.us-east-1.amazonaws.com/insertPaper",
+					"protocol": "https",
+					"host": [
+						"p92ss7f4a6",
+						"execute-api",
+						"us-east-1",
+						"amazonaws",
+						"com"
+					],
+					"path": [
+						"insertPaper"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "putItem",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Opaline 180\",\r\n    \"price\": 2.50,\r\n    \"statusPaper\": true\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://p92ss7f4a6.execute-api.us-east-1.amazonaws.com/insertPaper",
+					"protocol": "https",
+					"host": [
+						"p92ss7f4a6",
+						"execute-api",
+						"us-east-1",
+						"amazonaws",
+						"com"
+					],
+					"path": [
+						"insertPaper"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "fetchPapers",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://p92ss7f4a6.execute-api.us-east-1.amazonaws.com/fetchPapers",
+					"protocol": "https",
+					"host": [
+						"p92ss7f4a6",
+						"execute-api",
+						"us-east-1",
+						"amazonaws",
+						"com"
+					],
+					"path": [
+						"fetchPapers"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "fetchPaper",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://p92ss7f4a6.execute-api.us-east-1.amazonaws.com/fetchPaper/75423b10-cbb9-44e4-9896-59e5316493e0",
+					"protocol": "https",
+					"host": [
+						"p92ss7f4a6",
+						"execute-api",
+						"us-east-1",
+						"amazonaws",
+						"com"
+					],
+					"path": [
+						"fetchPaper",
+						"75423b10-cbb9-44e4-9896-59e5316493e0"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "updatePaper",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"paperStatus\": true\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://p92ss7f4a6.execute-api.us-east-1.amazonaws.com/updatePaper/75423b10-cbb9-44e4-9896-59e5316493e0",
+					"protocol": "https",
+					"host": [
+						"p92ss7f4a6",
+						"execute-api",
+						"us-east-1",
+						"amazonaws",
+						"com"
+					],
+					"path": [
+						"updatePaper",
+						"75423b10-cbb9-44e4-9896-59e5316493e0"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "login",
+			"request": {
+				"auth": {
+					"type": "oauth2",
+					"oauth2": [
+						{
+							"key": "authUrl",
+							"value": "https://dioacacio.auth.us-east-1.amazoncognito.com/login",
+							"type": "string"
+						},
+						{
+							"key": "clientId",
+							"value": "71r28201oks123nqhp9igvdont",
+							"type": "string"
+						},
+						{
+							"key": "scope",
+							"value": "email openid",
+							"type": "string"
+						},
+						{
+							"key": "grant_type",
+							"value": "implicit",
+							"type": "string"
+						},
+						{
+							"key": "redirect_uri",
+							"value": "https://example.com",
+							"type": "string"
+						},
+						{
+							"key": "addTokenTo",
+							"value": "header",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": ""
+				}
+			},
+			"response": []
+		}
+	]
+}
